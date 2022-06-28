@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Grids</title>
+</head>
+
+<body>
+
+    <h1>Bootstrap Grid System</h1>
+
+    <p>Bootstrap's grid system allows up to 12 columns across the page. <br>
+
+        If you do not want to use all 12 columns individually, you can group the columns together to create wider
+        columns:</p>
+
+    <p>Bootstrap's grid system is responsive, and the columns will re-arrange automatically depending on the screen
+        size.
+
+    </p>
+
+    <h2>Grid Classes</h2>
+
+    <ul>
+        <li>xs (for phones - screens less than 768px wide)</li>
+        <li>sm (for tablets - screens equal to or greater than 768px wide)</li>
+        <li>md (for small laptops - screens equal to or greater than 992px wide)</li>
+        <li>lg (for laptops and desktops - screens equal to or greater than 1200px wide)</li>
+    </ul>
+
+    <p>The classes above can be combined to create more dynamic and flexible layouts.</p>
+
+    <h2>Basic Structure of a Bootstrap Grid</h2>
+
+    <p>First; create a row (div class="row"). Then, add the desired number of columns (tags with appropriate .col-*-*
+        classes). <strong> Note that numbers in .col-*-* should always add up to 12 for each row</strong>.</p>
+
+    <h3>Three Equal Columns</h3>
+
+    <p>The following example shows how to get a three equal-width columns starting at tablets and scaling to large
+        desktops. On mobile phones or screens that are less than 768px wide, the columns will automatically stack:</p>
+
+    <div class="row">
+        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+        <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    </div>
+    </div>
+
+    <h3>Two Unequal Columns</h3>
+
+    <p>The following example shows how to get two various-width columns starting at tablets and scaling to large desktops:</p>
+
+    <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+  </div>
+</div>
+
+</body>
+
+</html>
