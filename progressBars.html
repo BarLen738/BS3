@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>BS Progress Bars</title>
+</head>
+
+<body>
+
+    <h2>Basic Progress Bar</h2>
+
+    <p>A progress bar can be used to show a user how far along he/she is in a process. <br>
+        Bootstrap provides several types of progress bars.</p>
+
+    <p>To create a default progress bar, add a .progress class to a <em>div</em> element:</p>
+
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:70%">
+                <!--To help improve accessibility for people using screen readers, you should include the aria-* attributes.-->
+                <span class="sr-only">70% Complete</span>
+            </div>
+        </div>
+    </div>
+
+    <h2>Progress Bar With Label</h2>
+
+    <p>Remove the .sr-only class from the progress bar to show a visible percentage:</p>
+
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:70%">
+                70%
+            </div>
+        </div>
+    </div>
+
+    <h2>Colored Progress Bars</h2>
+
+    <p>Contextual classes are used to provide "meaning through colors". <br>
+        The contextual classes that can be used with progress bars are:</p>
+
+    <ul>
+        <li>.progress-bar-success</li>
+        <li>.progress-bar-info</li>
+        <li>.progress-bar-warning</li>
+        <li>.progress-bar-danger</li>
+    </ul>
+
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" style="width:40%">
+                40% Complete (success)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                aria-valuemax="100" style="width:50%">
+                50% Complete (info)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                aria-valuemax="100" style="width:60%">
+                60% Complete (warning)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100" style="width:70%">
+                70% Complete (danger)
+            </div>
+        </div>
+    </div>
+
+    <h2>Striped Progress Bars</h2>
+
+    <p>Add class .progress-bar-striped to add stripes to the progress bars:</p>
+
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                40% Complete (success)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                50% Complete (info)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                60% Complete (warning)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                70% Complete (danger)
+            </div>
+        </div>
+    </div>
+
+    <h2>Animated Progress Bar</h2>
+
+    <p>Add class .active to animate the progress bar:</p>
+
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                40%
+            </div>
+        </div>
+    </div>
+
+    <h2>Stacked Progress Bars</h2>
+
+    <p>Create a stacked progress bar by placing multiple bars into the same <em>div class="progress"</em>:</p>
+
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                Free Space
+            </div>
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+                Warning
+            </div>
+            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+                Danger
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
